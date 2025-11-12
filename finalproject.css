@@ -217,9 +217,45 @@ header {
     color: #ed563b;
     padding-top: 10px;
 }
+/* member section  */
 
+.member{
+    background-image: url(member.jpg);
+    height: 400px;
+    padding: 50px 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;    
+ display: flex;              
+  flex-direction: column;      
+  justify-content: center;     
+  align-items: center;         
+  text-align: center;  
+  color: #fff;
+}
+.member h1{
+      text-transform: uppercase;
+margin-bottom: 20px;
+}
+.member h1 span{
+      color: #ed563b;
 
+      
+}
+.member p{
+    margin-bottom: 20px;
+    line-height: 30px;
+}
 
+.member button{
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    background-color: #ed563b;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 /* tablet and mobile phones */
 @media(max-width: 768px) {
     .desktop-menu {
