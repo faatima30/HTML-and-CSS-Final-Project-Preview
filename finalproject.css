@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Anybody", sans-serif;
+    background-color: #f4f6ff;
+}
+
+.container {
+    width: min(90%, 1120px);
+    margin-inline: auto;
+}
+
+header {
+    background-color: #ffffff;
+    height: 4.5rem;
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.desktop-menu {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.desktop-menu h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+}
+
+.desktop-menu h1 span {
+    color: #ed563b;
+}
+
+.menus-link {
+    display: flex;
+    gap: 40px;
+}
+
+.menus-link li {
+    list-style: none;
+}
+
+.menus-link li a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #2b2b2b;
+}
+
+.menus-link li a:hover {
+    color: #ed563b;
+}
+
+.hero {
+    position: relative;
+    height: calc(100vh - 4.5rem);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(35, 45, 57, 0.8); 
+    z-index: -1; 
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.hero h3 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    color: #ed563b;
+}
+
+.btn {
+    padding: 0.9rem 2rem;
+    font-size: 1rem;
+    background-color: #ed563b;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fafaf6;
+    color:black;
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+.btn-primary {
+    font-size: 1rem;
+    background-color: #ed563b;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: 10px 20px;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: #b83923;
+}
+
+/* tablet and mobile phones */
+@media(max-width: 768px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    header {
+    height: 4.5rem; 
+    background-color: transparent; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    }
+  i {
+        z-index: 11111;
+    }
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 15px;
+        right: 5%;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #ed563b;
+        color: white;
+        font-size: 2rem;
+        z-index: 10000;
+    }
+
+     .mobile-menu {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        background-color: #2b2b2b;
+        inset: 0 0 0 0;
+        color: white;
+        transform: translateX(100%);
+        transition: transform 0.35s ease-in-out;
+        z-index: 9999;
+    }
+
+    .mobile-menu[data-visible="true"] {
+        transform: translateX(0%);
+    }
+
+    .hamburger i[data-visible="true"] {
+        display: block;
+    }
+
+    .hamburger i[data-visible="false"] {
+        display: none;
+    }
+
+    .mobile-menu .navigation {
+        margin-top: 5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2.5rem;
+        width: 100%;
+    }
+
+    .mobile-menu .navigation .menus-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-menu .navigation h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        border-bottom: 1px solid white;
+        padding: 10px;
+    }
+
+    .mobile-menu a {
+        color: white !important;
+    }
+
+    .hero {
+        height: 100vh;  
+    }
+
+    .hero h1 {
+        font-size: 3.0625rem;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="finalproject.css" />
+  </head>
+  <body>
+    <!-- nav  -->
+    <header>
+      <!-- humburger -->
+      <div class="hamburger">
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+        <i class="fa-solid fa-close" data-visible="false"></i>
+      </div>
+      <nav class="container desktop-menu">
+        <!-- logo -->
+        <h1>Training <span>studio</span></h1>
+        <!-- desktop menu -->
+        <ul id="menu" class="menus-link">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Classes</a></li>
+          <li><a href="#">Schedules</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-actions">
+          <a href="#" class="btn-primary">SING UP</a>
+        </div>
+      </nav>
+
+      <!-- mobile menu -->
+      <nav class="mobile-menu" data-visible="false">
+        <div class="navigation">
+          <h1>Training <span>studio</span></h1>
+          <ul class="menus-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Classes</a></li>
+            <li><a href="#">Schedules</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <div class="mobile-menu-actions">
+            <a href="#" class="btn-primary">SING UP</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="hero">
+      <!-- Video Background -->
+      <video autoplay muted loop id="bg-video">
+        <source src="gym-video.mp4" type="video/mp4" />
+      </video>
+      <!-- Overlay -->
+      <div class="overlay"></div>
+      <div class="container">
+        <h3>work harder, get stronger</h3>
+        <h1>easy with our <span>gym</span></h1>
+        <button class="btn">become a member</button>
+      </div>
+    </section>
+    <!-- program section  -->
+
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const icons = document.querySelectorAll("i");
+
+      hamburger.addEventListener("click", function () {
+        const isVisible = mobileMenu.getAttribute("data-visible");
+        if (isVisible === "true") {
+          mobileMenu.setAttribute("data-visible", "false");
+          icons[0].setAttribute("data-visible", "true");
+          icons[1].setAttribute("data-visible", "false");
+        } else {
+          mobileMenu.setAttribute("data-visible", "true");
+          icons[0].setAttribute("data-visible", "false");
+          icons[1].setAttribute("data-visible", "true");
+        }
+      });
+    </script>
+  </body>
+</html>
