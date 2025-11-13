@@ -256,6 +256,85 @@ margin-bottom: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+/* class  */
+.main-class{
+    height: calc(90vh - 4.5rem);
+}
+.class-text{
+     text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+}
+.class-text h1{
+    margin-bottom: 20px;
+}
+
+.class-text h1 span{
+    color: #ed563b;
+}
+.class-text img{
+    margin-bottom: 20px;
+}
+.class-text p{
+    color: #6e6e6e;
+    line-height: 30px;
+}
+.class-box{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 60px; 
+  padding: 50px;
+  width: 70%;           
+  margin: 0 auto;      
+  justify-content: center; 
+}
+.classes{
+    gap: 30px;
+    display: grid;
+  grid-template-columns: repeat(1, 1fr);  
+}
+.class-item{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    padding: 30px 10px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+.class-btn{
+    padding: 18px;
+    font-size: 1rem;
+    background-color: #ed563b;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+.class img{
+    border-radius: 5px;
+}
+.class h2{
+padding: 20px 0px;
+}
+.class p{
+    font-size: 15px;
+    color: #818181;
+    line-height: 30px;
+}
+.class-btn2{
+    padding: 18px;
+    font-size: 1rem;
+    background-color: #ed563b;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
 /* tablet and mobile phones */
 @media(max-width: 768px) {
     .desktop-menu {
