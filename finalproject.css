@@ -335,6 +335,70 @@ padding: 20px 0px;
     transition: background-color 0.3s ease;
     margin-top: 20px;
 }
+
+.schedule{
+      height: calc(100vh);
+      padding: 100px;
+      text-align: center;
+      background-image: url(class-schedule.jpg);
+      margin-top: 150px;
+      color: white;
+}
+.schedule h1{
+    margin-bottom: 20px;
+}
+.schedule h1 span{
+    color: #ed563b;
+}
+.schedule img{
+    margin-bottom: 20px;
+}
+.schedule p{
+    line-height: 25px;
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+.schedule h4{
+    padding: 50px;
+}
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+   margin: 0 auto;
+}
+
+
+ td {
+  padding: 40px 60px; 
+  text-align: left;
+  color: #fff;
+  text-align: center;
+  border: 1px solid white; 
+  font-size: 12px;
+}
+
+td:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* tablet and mobile phones */
 @media(max-width: 768px) {
     .desktop-menu {
