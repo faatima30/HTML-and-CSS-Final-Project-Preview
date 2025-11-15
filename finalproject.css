@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: "Anybody", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -142,13 +142,12 @@ header {
 }
 
 .btn-primary {
-  font-size: 1rem;
+  font-size: 0.9rem;
   background-color: #ed563b;
   color: white;
   border: none;
   text-transform: uppercase;
   cursor: pointer;
-
   transition: background-color 0.3s ease;
   display: inline-block;
   padding: 10px 20px;
@@ -460,6 +459,7 @@ td:hover {
   height: calc(85vh - 4rem);
   width: 100%;
   margin-top: 180px;
+  margin-bottom: -90px;
 }
 .contact-us .map {
   flex: 1 1 500px;
@@ -538,6 +538,29 @@ td:hover {
 .contact-us .col-md-12,
 .contact-us .col-lg-12 {
   flex: 1 1 100%;
+}
+/* footer  */
+footer {
+    width: 100%;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;     
+    letter-spacing: 0.5px;
+}
+
+footer a {
+    color: #ed563b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* tablet and mobile phones */
